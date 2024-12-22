@@ -1,180 +1,243 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+  <!DOCTYPE html>
+  <html lang="uk">
+
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Resume</title>
+    <title>Мій сайт</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
-        }
-        .sidebar {
-            background-color: #333;
-            color: #0f0606;
-            padding: 15px;
-            width: 200px;
-            height: 100vh;
-            position: fixed;
-            left: 0;
-            top: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        .sidebar h2 {
-            margin-top: 0;
-        }
-        .sidebar ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        .sidebar ul li {
-            margin: 10px 0;
-        }
-        .sidebar ul li a {
-            text-decoration: none;
-            color: #fff;
-        }
-        .sidebar ul li a:hover {
-            text-decoration: underline;
-        }
-        .sidebar img {
-            width: 100px; /* Adjust the width as needed */
-            height: auto;
-            margin-top: 15px; /* Add some margin if needed */
-        }
-        .content {
-            margin-left: 220px;
-            padding: 20px;
-            flex: 1;
-        }
-        .link-with-image img {
-            width: 50px; /* Width of the image */
-            height: 50px; /* Height of the image */
-            margin-right: 10px; /* Right margin for the image */
-            vertical-align: middle; /* Vertical alignment of the image */
-        }
-    </style>
-</head>
-<body>
-    <div class="sidebar">
-        <h2>Навигация</h2>
-        <ul>
-            <li><a href="#info">Информация</a></li>
-            <li><a href="#projects">Проекты</a></li>
-            <li><a href="#experience">Опыт работы</a></li>
-        </ul>
-        <img src="https://cdn.pixabay.com/photo/2016/03/27/18/54/technology-1283624_1280.jpg" alt="Technology Image">
-    </div>
-    <div class="content">
-        <!--Main content-->
-        <div id="info">
-            <!--My info--> 
-            <div>
-                <h2>Front-End Developer</h2>
-            </div>
-            <h1>Mihail Gorbutyak</h1>
-            <p>Mykhailo Vitaliyovych
-                Контактна інформація:
-                
-                Телефон: +380 99 553 02580
-                
-                Електронна пошта: mgorbutyak23@gmail.com
-                Мета: Отримання посади в сфері IT, яка дозволить реалізувати мої знання та розвиватися професійно.
-                
-                Освіта: Центр-BOSCO [Рік початку-01.11.2024] - [Рік закінчення-01.11.2025] Спеціальність: IT
-                
-                Навички:
-                Технічні навички:
-                Програмування:
-                Python
-                Java
-                C++
-                JavaScript
-                PHP
-                Ruby
-                HTML/CSS 
-                Розробка ПЗ:
-                Розробка фронтенду (React, Angular, Vue.js)
-                Розробка бекенду (Node.js, Django, Flask, Spring)
-                Мобільна розробка (Android, iOS, React Native)
-                Бази даних:
-                SQL (MySQL, PostgreSQL, SQLite)
-                NoSQL (MongoDB, Cassandra, Redis)
-                DevOps і хмарні технології:
-                Контейнеризація (Docker, Kubernetes)
-                CI/CD (Jenkins, GitLab CI/CD)
-                Хмарні платформи (AWS, Google Cloud, Azure)
-                Кібербезпека:
-                Шифрування та безпека даних
-                Управління доступом і ідентифікацією
-                Аналіз вразливостей
-                Мережеві технології:
-                Конфігурація мережевих пристроїв
-                TCP/IP, DNS, HTTP/HTTPS
-                Безпека мережі
-                М'які навички (Soft skills):
-                Комунікація:
-                Вміння чітко і зрозуміло передавати інформацію
-                Навички презентації
-                Робота в команді:
-                Співпраця з іншими розробниками
-                Управління конфліктами
-                Критичне мислення та вирішення проблем:
-                Аналіз проблем і пошук рішень
-                Вміння працювати в стресових ситуаціях
-                Організаційні навички:
-                Управління проектами
-                Вміння розставляти пріоритети
-                Постійне навчання:
-                Стеження за новими технологіями
-                Підвищення кваліфікації
-                Базові знання мов програмування:
-                Python
-                Java
-                C++
-                HTML
-                CSS
-                Досвід роботи:
-                ІТ Конект, Програміст
-                Створення та підтримка коду для веб-сторінок на HTML і CSS
-                Розробка програмного забезпечення на C++
-                Оптимізація існуючих систем і виправлення помилок
-                Проекти: (якщо є)
-                Назва проекту
-                Короткий опис проекту та вашої ролі в ньому
-                Додаткова інформація:
-                Сертифікати, курси, хобі
-            </p>
-        </div>
+      :root {
+        --primary-color: #00aaff;
+        --secondary-color: #ff3333;
+        --background-dark: #121212;
+        --text-light: #fff;
+      }
 
-        <!--My projects-->
-        <div id="projects">
-            <h3>Projects</h3>
-            <ol>
-                <li>1. <a href="https://www.youtube.com/@M_i_h_a-gz1hb" target="_blank">YouTube</a></li>
-                <li>2. <a href="https://www.facebook.com/?locale=uk_UA" target="_blank">Facebook</a></li>
-                <li>3. <a href="https://twitter.com/yourprofile" target="_blank">Twitter</a></li>
-                <li>4. <a href="https://instagram.com/yourprofile" target="_blank">Instagram</a></li>
-                <li>5. <a href="https://t.me/My_personal_projects" target="_blank">Telegram</a></li>
-            </ol>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: linear-gradient(to bottom, var(--primary-color), var(--secondary-color));
+        color: var(--text-light);
+        line-height: 1.5;
+      }
+
+      nav.sidebar {
+        width: 250px;
+        background: var(--background-dark);
+        color: var(--text-light);
+        position: fixed;
+        left: -250px;
+        top: 0;
+        height: 100%;
+        padding: 20px;
+        overflow-y: auto;
+        box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+        transition: left 0.3s ease;
+      }
+
+      nav.sidebar.open {
+        left: 0;
+      }
+
+      nav.sidebar h2 {
+        text-align: center;
+        margin-bottom: 20px;
+        border-bottom: 2px solid var(--text-light);
+        padding-bottom: 10px;
+      }
+
+      nav.sidebar ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      nav.sidebar ul li {
+        margin: 15px 0;
+      }
+
+      nav.sidebar ul li a {
+        text-decoration: none;
+        color: var(--primary-color);
+        display: block;
+        font-size: 1rem;
+        transition: color 0.3s;
+      }
+
+      nav.sidebar ul li a:hover {
+        color: var(--secondary-color);
+      }
+
+      .sidebar-toggle {
+        position: fixed;
+        top: 10px;
+        left: 10px;
+        background: var(--primary-color);
+        color: var(--text-light);
+        border: none;
+        padding: 10px 15px;
+        border-radius: 5px;
+        cursor: pointer;
+        z-index: 2;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+      }
+
+      .content {
+        margin: 0 auto;
+        max-width: 800px;
+        padding: 20px;
+        padding-top: 60px;
+        /* Щоб компенсувати кнопку меню */
+        transition: margin-left 0.3s ease;
+      }
+
+      .content.shift {
+        margin-left: 250px;
+      }
+
+      section {
+        background: rgba(255, 255, 255, 0.2);
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        margin-bottom: 20px;
+        text-align: center;
+        transition: all 0.3s ease;
+      }
+
+      section:hover {
+        background: rgba(255, 255, 255, 0.3);
+      }
+
+      .toggle-content {
+        display: none;
+        margin-top: 10px;
+      }
+
+      .toggle-button {
+        background: var(--primary-color);
+        color: var(--text-light);
+        border: none;
+        padding: 8px 12px;
+        border-radius: 3px;
+        cursor: pointer;
+        margin-top: 10px;
+        font-size: 0.9rem;
+      }
+
+      .toggle-button:hover {
+        background: var(--secondary-color);
+      }
+
+      footer {
+        text-align: center;
+        padding: 10px;
+        background: var(--background-dark);
+        color: var(--text-light);
+        font-size: 0.9rem;
+      }
+
+      /* Адаптивність для смартфонів */
+      @media (max-width: 600px) {
+        .sidebar-toggle {
+          top: 5px;
+          left: 5px;
+          padding: 8px 12px;
+          font-size: 0.8rem;
+        }
+
+        nav.sidebar {
+          width: 200px;
+        }
+
+        nav.sidebar ul li a {
+          font-size: 0.9rem;
+        }
+
+        .content {
+          padding: 15px;
+        }
+
+        section {
+          padding: 15px;
+        }
+
+        .toggle-button {
+          font-size: 0.8rem;
+          padding: 6px 10px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <button class="sidebar-toggle">Меню</button>
+
+    <nav class="sidebar">
+      <h2>Меню</h2>
+      <ul>
+        <li><a href="#about">Про проєкт</a></li>
+        <li><a href="#languages">Мови програмування</a></li>
+        <li><a href="#groups">Групи</a></li>
+        <li><a href="https://t.me/My_personal_projects" target="_blank">Telegram</a></li>
+      </ul>
+    </nav>
+
+    <div class="content">
+      <h1>Вітаю на моєму сайті</h1>
+
+      <section id="about">
+        <h2>Про проєкт</h2>
+        <button class="toggle-button" data-target="about-content">Читати більше</button>
+        <div id="about-content" class="toggle-content">
+          <p>Мова програмування — це інструмент, що дозволяє розробникам створювати програми, скрипти, системи управління й багато іншого. Існує велика кількість мов програмування, кожна з яких має свої особливості, синтаксис та сфери застосування. Ось основні категорії мов програмування</p>
         </div>
-        <h1>Work Experience</h1>
-        <h2>Front-End Developer at IT Connect</h2>
-        <p><strong>November 01, 2024 - Present | Country</strong></p>
-        <ul>
-            <li>Developed and maintained code for various web pages using HTML, CSS, and JavaScript to ensure user-friendly experiences and accessibility.</li>
-            <li>Collaborated closely with backend developers to integrate front-end elements with server-side logic.</li>
-            <li>Improved website performance by optimizing images, scripts, and other resources, resulting in faster load times and enhanced user experience.</li>
-            <li>Designed and implemented responsive web designs, ensuring compatibility across different devices and browsers.</li>
-            <li>Identified and resolved issues in existing systems, performing debugging and testing to ensure seamless functionality.</li>
-            <li>Participated in code reviews, providing constructive feedback to peers and promoting best coding practices.</li>
-            <li>Assisted in the training and onboarding of new developers, sharing knowledge and fostering a collaborative team environment.</li>
-        </ul>
+      </section>
+
+      <section id="languages">
+        <h2>Мови програмування Мови</h2>
+        <button class="toggle-button" data-target="languages-content">Читати більше</button>
+        <div id="languages-content" class="toggle-content">
+          <p>Мови низького рівня:
+
+            Напряму працюють із апаратним забезпеченням.
+            Приклади: Assembler, C.
+            Використовуються для розробки операційних систем, драйверів тощо Зрозуміліші для людей, абстрагуються від технічних деталей машини.
+            Приклади: Python, Java, C#, <JavaScript class=""></JavaScript>
+            Використовуються для створення вебсайтів, мобільних додатків, ігор.</p>
         </div>
+      </section>
+
+      <section id="groups">
+        <h2>Групи</h2>
+        <button class="toggle-button" data-target="groups-content">Читати більше</button>
+        <div id="groups-content" class="toggle-content">
+          <p>Front-End, Back-End, Системне програмування.</p>
+        </div>
+      </section>
     </div>
-</body>
-</html>
+
+    <footer>© 2024 Мій сайт</footer>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const toggleButton = document.querySelector('.sidebar-toggle');
+        const sidebar = document.querySelector('.sidebar');
+        const content = document.querySelector('.content');
+
+        toggleButton.addEventListener('click', () => {
+          sidebar.classList.toggle('open');
+          content.classList.toggle('shift');
+        });
+
+        document.addEventListener('click', (event) => {
+          if (event.target.classList.contains('toggle-button')) {
+            const contentId = event.target.getAttribute('data-target');
+            const contentElement = document.getElementById(contentId);
+            contentElement.style.display = contentElement.style.display === 'none' ? 'block' : 'none';
+          }
+        });
+      });
+    </script>
+  </body>
+
+  </html>
